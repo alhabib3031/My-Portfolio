@@ -47,7 +47,53 @@ const translations = {
         "cert_filter_security": "Security",
         "cert_placeholder_title": "Certificate Title",
         "cert_placeholder_issuer": "Issuing Organization",
-        "cert_placeholder_date": "Date Earned"
+        "cert_placeholder_date": "Date Earned",
+
+        // --- Certificates Translations (EN) ---
+        // Certificate 1
+        "cert_title_1": "Programming Foundations - Level 1",
+        "cert_issuer_1": "ProgrammingAdvices",
+        "cert_date_1": "Date Earned: 2024-07-07",
+        // Certificate 2
+        "cert_title_2": "Algorithms & Problem-Solving Level 1",
+        "cert_issuer_2": "ProgrammingAdvices",
+        "cert_date_2": "Date Earned: 2024-07-08",
+        // Certificate 3
+        "cert_title_3": "Programming Using C++ - Level 1",
+        "cert_issuer_3": "ProgrammingAdvices",
+        "cert_date_3": "Date Earned: 2024-07-22",
+        // Certificate 4
+        "cert_title_4": "Algorithms & Problem-Solving Level 1 Solutions",
+        "cert_issuer_4": "ProgrammingAdvices",
+        "cert_date_4": "Date Earned: 2024-08-13",
+        // Certificate 5
+        "cert_title_5": "Algorithms & Problem-Solving Level 2",
+        "cert_issuer_5": "ProgrammingAdvices",
+        "cert_date_5": "Date Earn Earned: 2024-09-01",
+        // Certificate 6
+        "cert_title_6": "Introduction to Programming Using C++ Level 2",
+        "cert_issuer_6": "ProgrammingAdvices",
+        "cert_date_6": "Date Earned: 2024-09-07",
+        // Certificate 7
+        "cert_title_7": "Database Level 1 - SQL (Concepts and Practice)",
+        "cert_issuer_7": "ProgrammingAdvices",
+        "cert_date_7": "Date Earned: 2026-06-14",
+        // Certificate 8
+        "cert_title_8": "Organizer and Data Entry",
+        "cert_issuer_8": "Digital Group",
+        "cert_date_8": "Date Earned: 2026-05-07",
+        // Certificate 9
+        "cert_title_9": "Organizer and Data Entry",
+        "cert_issuer_9": "Digital Group",
+        "cert_date_9": "Date Earned: 2026-04-23",
+        // Certificate 10
+        "cert_title_10": "Organizer and Data Entry",
+        "cert_issuer_10": "Digital Group",
+        "cert_date_10": "Date Earned: 2024-07-04",
+        // Certificate 11
+        "cert_title_11": "Fundamentals of Cybersecurity",
+        "cert_issuer_11": "Coursera",
+        "cert_date_11": "Date Earned: 2024-03-14"
     },
     ar: {
         "nav_home": "الرئيسية",
@@ -97,6 +143,52 @@ const translations = {
         "cert_filter_security": "أمن المعلومات",
         "cert_placeholder_title": "عنوان الشهادة",
         "cert_placeholder_issuer": "الجهة المانحة",
-        "cert_placeholder_date": "تاريخ الحصول عليها"
+        "cert_placeholder_date": "تاريخ الحصول عليها",
+
+        // --- Certificates Translations (AR) ---
+        // Certificate 1
+        "cert_title_1": "أساسيات البرمجة - المستوى 1",
+        "cert_issuer_1": "بروجرامنج ادفايسز (ProgrammingAdvices)",
+        "cert_date_1": "تاريخ الحصول عليها: 2024-07-07",
+        // Certificate 2
+        "cert_title_2": "الخوارزميات وحل المشكلات - المستوى 1",
+        "cert_issuer_2": "بروجرامنج ادفايسز (ProgrammingAdvices)",
+        "cert_date_2": "تاريخ الحصول عليها: 2024-07-08",
+        // Certificate 3
+        "cert_title_3": "البرمجة باستخدام C++‎ - المستوى 1",
+        "cert_issuer_3": "بروجرامنج ادفايسز (ProgrammingAdvices)",
+        "cert_date_3": "تاريخ الحصول عليها: 2024-07-22",
+        // Certificate 4
+        "cert_title_4": "حلول الخوارزميات وحل المشكلات - المستوى 1",
+        "cert_issuer_4": "بروجرامنج ادفايسز (ProgrammingAdvices)",
+        "cert_date_4": "تاريخ الحصول عليها: 2024-08-13",
+        // Certificate 5
+        "cert_title_5": "الخوارزميات وحل المشكلات - المستوى 2",
+        "cert_issuer_5": "بروجرامنج ادفايسز (ProgrammingAdvices)",
+        "cert_date_5": "تاريخ الحصول عليها: 2024-09-01",
+        // Certificate 6
+        "cert_title_6": "مقدمة في البرمجة باستخدام C++‎ - المستوى 2",
+        "cert_issuer_6": "بروجرامنج ادفايسز (ProgrammingAdvices)",
+        "cert_date_6": "تاريخ الحصول عليها: 2024-09-07",
+        // Certificate 7
+        "cert_title_7": "قواعد البيانات المستوى 1 - مفاهيم وتطبيق SQL",
+        "cert_issuer_7": "بروجرامنج ادفايسز (ProgrammingAdvices)",
+        "cert_date_7": "تاريخ الحصول عليها: 2026-06-14",
+        // Certificate 8
+        "cert_title_8": "منظم ومدخل بيانات",
+        "cert_issuer_8": "ديجيتال جروب (Digital Group)",
+        "cert_date_8": "تاريخ الحصول عليها: 2026-05-07",
+        // Certificate 9
+        "cert_title_9": "منظم ومدخل بيانات",
+        "cert_issuer_9": "ديجيتال جروب (Digital Group)",
+        "cert_date_9": "تاريخ الحصول عليها: 2026-04-23",
+        // Certificate 10
+        "cert_title_10": "منظم ومدخل بيانات",
+        "cert_issuer_10": "ديجيتال جروب (Digital Group)",
+        "cert_date_10": "تاريخ الحصول عليها: 2024-07-04",
+        // Certificate 11
+        "cert_title_11": "أساسيات الأمن السيبراني",
+        "cert_issuer_11": "كورسيرا (Coursera)",
+        "cert_date_11": "تاريخ الحصول عليها: 2024-03-14"
     }
 };
