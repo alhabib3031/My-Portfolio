@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alhabib Ahmed | Certificates</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="antialiased transition-colors duration-300">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-opacity-90 bg-slate-900 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-xl font-bold text-gradient">Alhabib</a>
+                <div class="flex space-x-6 items-center gap-4 rtl:space-x-reverse">
+                    <a href="index.html" class="text-slate-300 hover:text-white transition-colors" data-i18n="nav_home">Home</a>
+                    <a href="certificates.html" class="text-blue-500 font-medium transition-colors" data-i18n="nav_certificates">Certificates</a>
+                    <button id="lang-toggle" class="bg-slate-800 text-white px-3 py-1 rounded-md text-sm border border-slate-700 hover:border-blue-500 transition-colors" data-i18n="lang_toggle">العربية</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-32 pb-12 px-4 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto text-center" data-aos="fade-down">
+            <h1 class="text-4xl font-bold text-gradient mb-6" data-i18n="cert_title">My Certificates</h1>
+            
+            <!-- Filters -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <label class="filter-label">
+                    <input type="checkbox" class="cert-filter custom-checkbox" value="all" checked>
+                    <span data-i18n="cert_filter_all">All</span>
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" class="cert-filter custom-checkbox" value="backend">
+                    <span data-i18n="cert_filter_backend">Backend</span>
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" class="cert-filter custom-checkbox" value="frontend">
+                    <span data-i18n="cert_filter_frontend">Frontend</span>
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" class="cert-filter custom-checkbox" value="dataentry">
+                    <span data-i18n="cert_filter_dataentry">Data Entry</span>
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" class="cert-filter custom-checkbox" value="security">
+                    <span data-i18n="cert_filter_security">Security</span>
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" class="cert-filter custom-checkbox" value="other">
+                    <span data-i18n="cert_filter_other">Other</span>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Grid -->
+    <section class="py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="certificates-container">
+                
+                <!-- Backend Certificates -->
+                <div class="certificate-card hover-card" data-category="backend" data-aos="fade-up">
+                    <a href="certificates/backend/certificate-of-completion-for-15-database-level-1-sql-concepts-and-practice.pdf" target="_blank" class="block">
+                        <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative group">
+                            <i class="fas fa-file-pdf text-5xl text-red-500 group-hover:scale-110 transition-transform duration-300"></i>
+                            <div class="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View PDF</span>
+                            </div>
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="cert_placeholder_title">Certificate Title</h3>
+                    <p class="text-slate-400 mb-2" data-i18n="cert_placeholder_issuer">Issuing Organization</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-sm text-blue-400" data-i18n="cert_placeholder_date">Date Earned</span>
+                        <span class="skill-badge text-xs m-0">Backend</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card hover-card" data-category="backend" data-aos="fade-up">
+                    <a href="certificates/backend/certificate-of-completion-for-algorithms-problem-solving-level-1.pdf" target="_blank" class="block">
+                        <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative group">
+                            <i class="fas fa-file-pdf text-5xl text-red-500 group-hover:scale-110 transition-transform duration-300"></i>
+                            <div class="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View PDF</span>
+                            </div>
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="cert_placeholder_title">Certificate Title</h3>
+                    <p class="text-slate-400 mb-2" data-i18n="cert_placeholder_issuer">Issuing Organization</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-sm text-blue-400" data-i18n="cert_placeholder_date">Date Earned</span>
+                        <span class="skill-badge text-xs m-0">Backend</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card hover-card" data-category="backend" data-aos="fade-up">
+                    <a href="certificates/backend/certificate-of-completion-for-algorithms-problem-solving-level-1-solutions.pdf" target="_blank" class="block">
+                        <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative group">
+                            <i class="fas fa-file-pdf text-5xl text-red-500 group-hover:scale-110 transition-transform duration-300"></i>
+                            <div class="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View PDF</span>
+                            </div>
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="cert_placeholder_title">Certificate Title</h3>
+                    <p class="text-slate-400 mb-2" data-i18n="cert_placeholder_issuer">Issuing Organization</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-sm text-blue-400" data-i18n="cert_placeholder_date">Date Earned</span>
+                        <span class="skill-badge text-xs m-0">Backend</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card hover-card" data-category="backend" data-aos="fade-up">
+                    <a href="certificates/backend/certificate-of-completion-for-algorithms-problem-solving-level-2.pdf" target="_blank" class="block">
+                        <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative group">
+                            <i class="fas fa-file-pdf text-5xl text-red-500 group-hover:scale-110 transition-transform duration-300"></i>
+                            <div class="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View PDF</span>
+                            </div>
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="cert_placeholder_title">Certificate Title</h3>
+                    <p class="text-slate-400 mb-2" data-i18n="cert_placeholder_issuer">Issuing Organization</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-sm text-blue-400" data-i18n="cert_placeholder_date">Date Earned</span>
+                        <span class="skill-badge text-xs m-0">Backend</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card hover-card" data-category="backend" data-aos="fade-up">
+                    <a href="certificates/backend/certificate-of-completion-for-introduction-to-programming-using-c-level-1.pdf" target="_blank" class="block">
+                        <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative group">
+                            <i class="fas fa-file-pdf text-5xl text-red-500 group-hover:scale-110 transition-transform duration-300"></i>
+                            <div class="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View PDF</span>
+                            </div>
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="cert_placeholder_title">Certificate Title</h3>
+                    <p class="text-slate-400 mb-2" data-i18n="cert_placeholder_issuer">Issuing Organization</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-sm text-blue-400" data-i18n="cert_placeholder_date">Date Earned</span>
+                        <span class="skill-badge text-xs m-0">Backend</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card hover-card" data-category="backend" data-aos="fade-up">
+                    <a href="certificates/backend/certificate-of-completion-for-introduction-to-programming-using-c-level-2.pdf" target="_blank" class="block">
+                        <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative group">
+                            <i class="fas fa-file-pdf text-5xl text-red-500 group-hover:scale-110 transition-transform duration-300"></i>
+                            <div class="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View PDF</span>
+                            </div>
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="cert_placeholder_title">Certificate Title</h3>
+                    <p class="text-slate-400 mb-2" data-i18n="cert_placeholder_issuer">Issuing Organization</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-sm text-blue-400" data-i18n="cert_placeholder_date">Date Earned</span>
+                        <span class="skill-badge text-xs m-0">Backend</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card hover-card" data-category="backend" data-aos="fade-up">
+                    <a href="certificates/backend/certificate-of-completion-for-programming-foundations-level-1.pdf" target="_blank" class="block">
+                        <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative group">
+                            <i class="fas fa-file-pdf text-5xl text-red-500 group-hover:scale-110 transition-transform duration-300"></i>
+                            <div class="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View PDF</span>
+                            </div>
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="cert_placeholder_title">Certificate Title</h3>
+                    <p class="text-slate-400 mb-2" data-i18n="cert_placeholder_issuer">Issuing Organization</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-sm text-blue-400" data-i18n="cert_placeholder_date">Date Earned</span>
+                        <span class="skill-badge text-xs m-0">Backend</span>
+                    </div>
+                </div>
+
+                <!-- Data Entry Certificates -->
+                <div class="certificate-card hover-card" data-category="dataentry" data-aos="fade-up">
+                    <a href="certificates/dataentry/DigitalGroupHoricaLibya2026.jpg" target="_blank" class="block">
+                        <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative group">
+                            <img src="certificates/dataentry/DigitalGroupHoricaLibya2026.jpg" alt="Certificate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View Image</span>
+                            </div>
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="cert_placeholder_title">Certificate Title</h3>
+                    <p class="text-slate-400 mb-2" data-i18n="cert_placeholder_issuer">Issuing Organization</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-sm text-blue-400" data-i18n="cert_placeholder_date">Date Earned</span>
+                        <span class="skill-badge text-xs m-0">Data Entry</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card hover-card" data-category="dataentry" data-aos="fade-up">
+                    <a href="certificates/dataentry/DigitalGroupLibyaBuild2026.jpg" target="_blank" class="block">
+                        <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative group">
+                            <img src="certificates/dataentry/DigitalGroupLibyaBuild2026.jpg" alt="Certificate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View Image</span>
+                            </div>
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="cert_placeholder_title">Certificate Title</h3>
+                    <p class="text-slate-400 mb-2" data-i18n="cert_placeholder_issuer">Issuing Organization</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-sm text-blue-400" data-i18n="cert_placeholder_date">Date Earned</span>
+                        <span class="skill-badge text-xs m-0">Data Entry</span>
+                    </div>
+                </div>
+
+                <div class="certificate-card hover-card" data-category="dataentry" data-aos="fade-up">
+                    <a href="certificates/dataentry/DigitalGroupLibyaBuild_Pharma_RNF_2024.jpeg" target="_blank" class="block">
+                        <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative group">
+                            <img src="certificates/dataentry/DigitalGroupLibyaBuild_Pharma_RNF_2024.jpeg" alt="Certificate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View Image</span>
+                            </div>
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="cert_placeholder_title">Certificate Title</h3>
+                    <p class="text-slate-400 mb-2" data-i18n="cert_placeholder_issuer">Issuing Organization</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-sm text-blue-400" data-i18n="cert_placeholder_date">Date Earned</span>
+                        <span class="skill-badge text-xs m-0">Data Entry</span>
+                    </div>
+                </div>
+
+                <!-- Security Certificates -->
+                <div class="certificate-card hover-card" data-category="security" data-aos="fade-up">
+                    <a href="certificates/security/Coursera DHA5YPTSJGZ9.pdf" target="_blank" class="block">
+                        <div class="h-48 bg-slate-700 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative group">
+                            <i class="fas fa-file-pdf text-5xl text-red-500 group-hover:scale-110 transition-transform duration-300"></i>
+                            <div class="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">View PDF</span>
+                            </div>
+                        </div>
+                    </a>
+                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="cert_placeholder_title">Certificate Title</h3>
+                    <p class="text-slate-400 mb-2" data-i18n="cert_placeholder_issuer">Issuing Organization</p>
+                    <div class="flex justify-between items-center mt-4">
+                        <span class="text-sm text-blue-400" data-i18n="cert_placeholder_date">Date Earned</span>
+                        <span class="skill-badge text-xs m-0">Security</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-800 text-center text-slate-400 mt-10">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col items-center">
+            <p class="mb-4" data-i18n="footer_text">Thank you for reviewing my profile! Feel free to reach out to me via email or phone.</p>
+            <div class="flex gap-4">
+                <a href="mailto:alhabib.5377@outlook.com" class="text-slate-400 hover:text-white text-2xl transition-colors"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+218945087216" class="text-slate-400 hover:text-white text-2xl transition-colors"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/alhabib3031" class="text-slate-400 hover:text-white text-2xl transition-colors"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
