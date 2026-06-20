@@ -53,25 +53,25 @@ document.addEventListener('DOMContentLoaded', () => {
     if (toggleBtn) {
         toggleBtn.addEventListener('click', toggleLanguage);
     }
-    
+
     // Certificate Filtering Logic
     const filterCheckboxes = document.querySelectorAll('.cert-filter');
     const certificates = document.querySelectorAll('.certificate-card');
 
-    if(filterCheckboxes.length > 0) {
+    if (filterCheckboxes.length > 0) {
         filterCheckboxes.forEach(checkbox => {
             checkbox.addEventListener('change', (e) => {
                 const allCheckbox = document.querySelector('input[value="all"]');
-                
+
                 // If "all" is checked
                 if (e.target.value === 'all') {
                     if (e.target.checked) {
-                        filterCheckboxes.forEach(cb => { if(cb.value !== 'all') cb.checked = false; });
+                        filterCheckboxes.forEach(cb => { if (cb.value !== 'all') cb.checked = false; });
                         certificates.forEach(cert => cert.style.display = 'block');
                         setTimeout(() => AOS.refresh(), 100);
                     } else {
                         // Prevent unchecking "all" if nothing else is checked
-                        e.target.checked = true; 
+                        e.target.checked = true;
                     }
                     return;
                 }
@@ -79,11 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 // If a specific category is checked/unchecked
                 if (e.target.value !== 'all') {
                     allCheckbox.checked = false;
-                    
+
                     const checkedCategories = Array.from(filterCheckboxes)
                         .filter(cb => cb.checked && cb.value !== 'all')
                         .map(cb => cb.value);
-                        
+
                     if (checkedCategories.length === 0) {
                         allCheckbox.checked = true;
                         certificates.forEach(cert => cert.style.display = 'block');
@@ -110,17 +110,17 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.certificate-card').forEach(card => {
             const link = card.querySelector('a');
             const icon = card.querySelector('.fa-file-pdf');
-            
+
             if (link && icon) {
                 const pdfUrl = link.getAttribute('href');
                 if (pdfUrl.toLowerCase().endsWith('.pdf')) {
                     // Create canvas element
                     const canvas = document.createElement('canvas');
                     canvas.className = 'w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 absolute top-0 left-0 z-0';
-                    
+
                     const container = icon.parentElement;
                     container.insertBefore(canvas, container.firstChild);
-                    
+
                     // Render PDF to canvas
                     pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
                         return pdf.getPage(1);
